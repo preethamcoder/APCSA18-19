@@ -1,0 +1,16 @@
+//*****************************************************************************************************
+// FloatNums.java                                       Lab2_3
+// Preetham                                           9/10/18
+// This program helps me laern how to make the computer do logical operations with float numbers
+//*****************************************************************************************************
+import java.util.Scanner;
+public class FloatNums{
+  //--------------------------------------------------
+  // Sum, difference, and product of two float numbers
+  //--------------------------------------------------
+  public static void main (String[]args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter your first number: ");
+    float num1 = sc.nextFloat();
+  }
+}

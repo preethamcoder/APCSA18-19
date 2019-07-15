@@ -1,0 +1,37 @@
+//****************************************************************************************************
+// cookieJar.java                                                      Lab2_12
+// Preetham                                                            9/11/18
+// This program helps me learn the usage of the math package and % operator and prints value of money.
+//****************************************************************************************************
+
+import java.util.Scanner;
+import java.text.NumberFormat;
+
+
+public class cookieJar{
+  public static void main(String[]args){
+    //---------------------------------------------------------------------
+    // prints the value of money in dollars and cents after getting inputs
+    //---------------------------------------------------------------------
+    Scanner sc = new Scanner(System.in);
+    int quarters, dimes, nickels, pennies;
+    System.out.println("Enter the number of quarters in the jar. ");
+    quarters = sc.nextInt();
+    System.out.println("Enter the number of dimes in the jar. ");
+    dimes = sc.nextInt();
+    System.out.println("Enter the number of nickels in the jar. ");
+    nickels = sc.nextInt();
+    System.out.println("Enter the number of pennies in the jar. ");
+    pennies = sc.nextInt();
+    float moneyInCents = (25*quarters + 10*dimes + 5*nickels + pennies);
+    float dollars = moneyInCents/100;
+    //float remainingCents = moneyInCents%100;
+    //float total = dollars +(remainingCents/100);
+    NumberFormat money = NumberFormat.getCurrencyInstance();
+    //only works for values above 1 dollar as of now
+    System.out.println(quarters+" quarters, "+dimes+" dimes, "+nickels+" nickels, and "+pennies+" pennies acoount up to "+money.format(dollars));
+    sc.close(); 
+  }
+}
+
+    

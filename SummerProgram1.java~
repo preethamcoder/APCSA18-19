@@ -1,0 +1,7 @@
+import java.util.scanner;
+public class SummerProgram1{
+  public static void main(String[]args){
+    System.out.println("This program will walk you through the power-rule in differentiation.");
+    
+  }
+}

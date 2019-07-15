@@ -1,0 +1,21 @@
+// *************************************************************************
+//   Names.java
+//   This program teaches me how to use print statements with a tab space.
+// *************************************************************************
+
+public class Names{
+    // ------------------------
+    // main prints the list
+    // ------------------------
+
+  public static void main(String[]args){
+    System.out.println();
+    System.out.println ("\tName\t\t\t\tHometown\t\t\t\tMajor");
+    System.out.println ("\t====\t\t\t\t========\t\t\t\t=====");
+    System.out.println ("\tRobbie\t\t\tAlpharetta\t\t\tMath");
+    System.out.println ("\tPreetham\t\t\tDelhi\t\t\t\tCyber Security\t");
+    System.out.println ("\tSally\t\t\tRoanoke\t\t\t\tComputer Science\t");
+    System.out.println ("\tAlexander\t\tWashington\t\t\tMath\t\t");
+    System.out.println ("\tGyandeep\t\t\tEl Paso\t\t\t\tAnti-Bullying\t");
+  }
+}

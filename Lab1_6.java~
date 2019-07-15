@@ -1,0 +1,17 @@
+//**************************************************************************************************************************************
+// Lab1_6.java                                           1.6 Lab                                                                       
+//
+//  Preetham                                                8/21/18
+//
+// This program is going to help me learn how to use the print statement and print my initials using letters to make other huge letters
+//**************************************************************************************************************************************
+
+public class Lab1_6
+{
+  public static void main (String[] args)
+  {
+    System.out.println("PPPP         
+
+
+
+

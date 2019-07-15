@@ -1,0 +1,27 @@
+//**********************************************************************************************
+//Lab2_13                                                                      PhoneNumber
+//Preetham                                                                     9/18/18
+//This program helps me learn the usage of the random numebr function and string concatenation. 
+//**********************************************************************************************
+
+import java.util.Random;
+
+public class Lab2_13{
+  public static void main(String[]args){
+    //-------------------------------------------------------------------------
+    // The numbers are generated randomly with some restrictions on parameters
+    //-------------------------------------------------------------------------
+    Random generator = new Random();
+    int digitOne, digitTwo, digitThree, secondSet, lastSet;
+    digitOne = generator.nextInt(8);
+    System.out.print("The random phone number is "+digitOne);
+    digitTwo = generator.nextInt(8);
+    System.out.print(digitTwo);
+    digitThree = generator.nextInt(8);
+    System.out.print(digitThree+"-");
+    secondSet = generator.nextInt(742);
+    System.out.print(secondSet+"-");
+    lastSet = generator.nextInt(10000);
+    System.out.println(lastSet);
+  }
+}

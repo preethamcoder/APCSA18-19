@@ -1,0 +1,45 @@
+//******************************************************************************
+// idealWeight.java
+// This program helps me learn how to use if statements and character variables
+//******************************************************************************
+
+import java.util.Scanner;
+
+public class idealWeight{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
+    //int idealWeight;
+    int inches;
+    /*String gender, oppGen;
+    System.out.println("Enter your gender (male or female) ");
+    gender = sc.nextLine();
+    System.out.println("Enter your opposite gender. ");
+    oppGen = sc.nextLine();*/
+    //System.out.println("You are "+inputStat);
+    System.out.println("How many feet tall are you? ");
+    int feet = sc.nextInt();
+    System.out.println("How many inches in addition to feet tall are you? ");
+    inches = sc.nextInt();
+    int heightInInches = (feet*12 + inches);
+    int inchesBalance, idealWeight;
+    //System.out.println("You are "+heightInInches+" tall."); 
+    inchesBalance = (heightInInches - 60);
+    idealWeight = (106 + (6*inchesBalance));
+    System.out.println("If you are male and are "+feet+" feet and "+inches+" inches tall, your ideal weight is "+idealWeight+" pounds, but it is ok if you weigh anywhere in between "+Math.ceil((0.85*idealWeight))+" pounds and "+Math.ceil((1.15*idealWeight))+" pounds.");
+    inchesBalance = heightInInches - 60;
+    idealWeight = 100 + (inchesBalance*5);
+    System.out.println("If you are female and are "+feet+" feet and "+inches+" inches tall, your ideal weight is "+idealWeight+" pounds, but it is ok if you weigh anywhere in between "+Math.ceil((0.85*idealWeight))+" and "+Math.ceil((1.15*idealWeight))+" pounds."); 
+    sc.close();
+    /*else if (gender=="F")
+    {
+       inchesBalance = heightInInches - 60;
+       idealWeight = 100 + (inchesBalance*5);
+       System.out.println("Because you are "+gender+" your ideal weight is "+idealWeight+" pounds"); 
+    }
+    else {
+       System.out.println("Something is wrong with the code. ");
+    }*/
+    
+   }
+}
+
