@@ -1,0 +1,56 @@
+import java.util.Scanner;
+public class PitchCount
+{
+public static void main(String[] args)
+   {
+  int max;
+  int min;
+  int total;
+  int pitcher;
+  String again = "y";
+  Scanner scan = new Scanner(System.in);
+  int[] []  pitchArray = {
+    {45, 105, 67},
+    {81, 100, 93, 25, 128, 88}, 
+    {45, 53}, 
+    {79, 107, 53, 79}, 
+    {11, 9, 3, 63, 20, 18, 3} };
+  for (int row = 0; row < pitchArray.length; row++)
+  {
+    total = 0;
+    max = pitchArray[row][0];
+    min = pitchArray[row][0];
+    for (int col = 0; col < pitchArray[row].length; col++)
+    {
+      if (pitchArray[row][col] > max)
+       max = pitchArray[row][col];
+      else if (pitchArray[row][col] < min)
+        min = pitchArray[row][col];
+      total+= pitchArray[row][col];
+    }
+    System.out.println ("For Pitcher " + (row+1) + " the maximum number of pitches is " + max + ". The minimum number of pitches is " + min + 
+                        ". The total number of pitches is " + total + " and the total number of games is " + pitchArray[row].length+"\n");
+  }
+ while (again.equalsIgnoreCase("y"))
+ {
+   System.out.println ("Enter the number for the Pitcher whose stats you want to view");
+   pitcher = scan.nextInt();
+   total = 0;
+   max = pitchArray[pitcher - 1][0];
+   min = pitchArray[pitcher - 1][0];
+  for (int col = 0; col < pitchArray[pitcher -1].length; col++)
+    {
+      if (pitchArray[pitcher - 1][col] > max)
+         max = pitchArray[pitcher -1 ][col];
+      else if (pitchArray[pitcher - 1][col] < min)
+        min = pitchArray[pitcher - 1][col];
+      total+= pitchArray[pitcher - 1][col];  
+    }
+  System.out.println ("For Pitcher " + (pitcher -1 +1) + " the maximum number of pitches is " + max + ". The minimum number of pitches is " + min + 
+                        ". The total number of pitches is " + total + " and the total number of games is " + pitchArray[pitcher - 1].length+"\n");
+  System.out.println("Would you like to check another pitcher's stats?");
+  again = scan.next();
+}
+}
+}
+

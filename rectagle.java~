@@ -1,0 +1,15 @@
+public class rectagle{
+  private double length, width, area, perimeter;
+  public rectagle(double len, double wid){
+    length = len;
+    width = wid;
+  }
+  public String getPerimeter(){
+    perimeter = 2*(length+width);
+    return("The perimeter of your reactangle is "+perimeter+" square units.");
+  }
+  public String getArea(){
+    area = length*width;
+    return("The area of your rectangle is "+area+" square units.");
+  }
+}

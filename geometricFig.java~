@@ -1,0 +1,12 @@
+public class geometricFig{
+  public double comSide;
+  public double figArea;
+  public double figPerimeter;
+  
+  public double area(){
+    return figArea;
+  }
+  public double perimeter(){
+    return figPerimeter;
+  }
+}

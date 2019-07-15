@@ -1,0 +1,4 @@
+public class studentRun{
+  Student m1 = new Student("Manoj", 123, 92, 98, 0);
+  mi.gpaRet();
+}

@@ -1,15 +1,11 @@
-//****************************************************************
-// Test.java                                           Lab 1_1 and Lab1_2
-//
-//  Preetham                                                  8/21/18
-//
-// This is a program which would help me learn the types of errors and how they can be fixed 
-//****************************************************************
-
-public class Test
-{
-  public static void main (String[] args)
-  {
-    System.out.println("An Emergency Broadcast");
-  }
+// driver class 
+public class Test  
+{ 
+    public static void main(String args[])  
+    { 
+          
+        MountainBike mb = new MountainBike(3, 100, 25); 
+        System.out.println(mb.toString()); 
+              
+    } 
 }

@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class squAtt extends geometricFig{
+  Scanner sc = new Scanner(System.in);
+  public squAtt(double side){
+    comSide = side;
+  }
+  public double figArea(){
+    return(comSide*comSide); 
+  }
+  public double figPerimeter(){
+    return(4*comSide);
+  }
+  public static void main(String[]args){
+    
+  }
+  
+}

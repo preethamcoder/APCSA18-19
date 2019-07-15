@@ -1,0 +1,19 @@
+public class pentag extends geometricFig{
+  public double side2;
+  public double side3;
+  public double side4;
+  public double side5;
+  
+  public pentag(double side1, double side2, double side3, double side4, double side5){
+    super(side1);
+    this.side2 = side2;
+    this.side3 = side3;
+    this.side4 = side4;
+    this.side5 = side5;
+  }
+  @Override
+  public void calcPerimeter(){
+    this.perimeter = side1+side2+side3+side4+side5;
+  }
+  
+}

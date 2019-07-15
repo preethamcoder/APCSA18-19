@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class squareRun{
+  public static void main(String[]args){
+    double sideLength;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("What is the side of the square? ");
+    sideLength = sc.nextDouble();
+    Square s1 = new Square(sideLenght);
+  }
+}

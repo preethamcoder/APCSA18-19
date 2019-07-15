@@ -1,0 +1,13 @@
+public class squareA{
+ private int side; 
+ private double area;
+ private int perimeter; 
+ 
+ public squareA(int sidez){
+   side = sidez;
+ }
+ public double getArea(side){
+   area = side*side;
+   return area;
+ }
+}
