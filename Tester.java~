@@ -1,0 +1,10 @@
+public class Tester{
+  public static void main(String[]args){
+    
+    squAtt sa = new squAtt(9.0, 10.0);
+    sa.calcArea();
+    System.out.println(sa.getArea());
+  }
+  
+
+}
