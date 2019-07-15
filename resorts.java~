@@ -1,0 +1,33 @@
+// ***************************************************************
+//   Resorts.java
+//   It helps me lern the usage of cascading if statements and
+//   logical operator together.
+// ***************************************************************
+import java.util.Scanner;
+
+public class resorts{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
+    int temp;
+    System.out.println("What is the temperature outside?");
+    temp = sc.nextInt();
+    //System.out.println(temp);
+    {
+    if(temp>95){
+      System.out.println("Visit our shops!");
+    }else if(temp>=80){
+      System.out.println("Go swimming!");
+    }else if(temp>=60){
+      System.out.println("Play tennis!");
+    }else if(temp>=40){
+      System.out.println("Play golf");
+    }else if(temp>=20){
+      System.out.println("Go skiing!");      
+    }else{
+      System.out.println("Visit our shops!");
+    }
+    
+    }
+   sc.close();
+  }
+}

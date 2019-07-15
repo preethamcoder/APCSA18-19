@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class averages{
+  public static void main(String[]args){
+    Scanner sc = new Scanner(System.in);
+    int h, total=0;
+    System.out.println("How many values do you plan on entering? ");
+    h = sc.nextInt();
+    
+    for(int i = 0; i<h; i++){
+      int n = sc.nextInt();
+      total += n;
+      
+    }
+      double avg = total/h;
+      System.out.println(avg);
+      
+  }
+}
+
+      
